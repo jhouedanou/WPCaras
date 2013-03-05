@@ -1,0 +1,149 @@
+/*
+Theme Name: Main Eris TPL
+Theme URI: http://html5reset.org
+Description:Template article.
+Author: Jean Luc Houédanou
+Author URI: http://houedanou.com
+Version: 1
+*/
+
+/*
+Theme responsive pour le caras
+*/
+
+/* reset-------------------------------------------------------------- */
+
+/* Design by Jean Luc Houedanou */
+
+/*queries pour la zone de pub*/
+@media screen and (max-width: 960px) {
+
+}
+@media screen and (max-width: 768px) {
+         /* linearization for grid module */
+		.linearize-level-1,
+		.linearize-level-1 > [class*="ym-g"] {
+		display: block;
+		float: none;
+		padding: 0;
+		margin: 0;
+		width: 100% !important;
+		}
+		/* reset defined gutter values */
+		.linearize-level-1 > [class*="ym-g"] > [class*="ym-gbox"] {
+		overflow: hidden; /* optional for containing floats */
+		padding: 0;
+		margin: 0;
+		}
+		#slider,#pub{display:none !important}
+}
+@media screen and (max-width: 899px) {
+       #slider,#pub{display:none !important}
+
+}
+
+@media screen and (max-width: 800px) {
+       #slider,#fpageslider, #pub{display:none !important}
+       /*break du menu*/
+        .nav > li {
+        float: none;
+    }
+    .nav ul {
+        display: block;
+        width: 100% !important;
+
+    }
+   .nav > li.hover > ul , .nav li li.hover ul {
+        position: static;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+       #fpageslider, #pub{display:none !important}
+
+}
+
+@media screen and (max-width: 1024px) {
+    #pub{display:none !important}
+
+}
+@media screen and (max-width: 320px) {
+   #fpageslider, #pub{display:none !important}
+}
+body{
+background:url(images/indexc.jpg) #000 !important;
+}
+body > #header {
+}
+    .ym-wrapper {
+    	width:100%;
+    	text-align:center}
+    .ym-wbox {
+		padding:0 10px;
+    }
+#logowrapper{
+	border-top: #000 10px solid;
+	position:relative;
+	text-align: center;
+	height:124px;
+}
+	#logobox{
+		width:auto;
+		position:relative;
+		height:122px;}
+		div#logo.ym-g30 a{
+			display:block;
+			width:286px;
+			height:122px;
+			position:relative;}
+			#nbwrapper{
+				padding:10px 0;
+				width:551px;
+				background:url("images/sprite.png") repeat scroll -8px -241px transparent;
+				position:relative}
+				#nbw{
+
+					}
+					#nbw ul{
+
+					}
+					#nbw ul li{
+
+					}
+
+#bodywrapper,#bodybox{
+	position:relative;
+	clear:both;
+	height:auto;
+	text-align:center;
+}
+	#slider-caras{
+		background: url("images/sprite.png") repeat scroll 19px -364px;
+		text-align: center;
+		height: 417px;
+		margin: 0 auto;
+		width: 1200px;
+	}
+		#acc{
+			 height: 400px;
+    margin: 0 auto;
+    width: 1137px;
+
+		}
+			ul#accordion-slider{
+			 margin: 0;
+			 padding: 0;
+			 list-style: none;
+			 width:1137px !important;
+			 position: relative;
+			}
+			ul#accordion-slider li{
+			 display: block;
+			 overflow: hidden;
+			 padding: 0;
+			 float: left;
+			 width: 130px;
+			 height: 400px;
+			 background:orange;
+			}
