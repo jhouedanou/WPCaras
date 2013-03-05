@@ -26,7 +26,7 @@
                         <div id="projects">
                         	<div class="projet"></div>
                         </div>
-        			</div>
+        			</div><!--fin blogs -->
         			<div id="ilgridg" class="ym-g30 ym-gr">
         				qui sommes nous ?
         			</div>
