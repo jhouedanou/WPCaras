@@ -5,7 +5,7 @@
 			 spacing : 1
 		 });
   $('.nano').slimScroll({
-        height: '500px'
+        height: '370px'
     });
 
  $.backstretch("http://localhost/caras/wp-content/themes/murtaugh-HTML5-Reset-Wordpress-Theme-8aa6329/images/indexc.jpg");/* trigger when page is ready */
