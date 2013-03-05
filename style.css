@@ -147,3 +147,26 @@ body > #header {
 			 height: 400px;
 			 background:orange;
 			}
+#the_body{
+	background: red;
+	clear: both;
+	height:auto;
+	position:relative}
+	#left{
+		height:auto;
+		position:relative;
+		background:green}		
+		
+		#ilgridl{
+			background: url("images/sprite.png") repeat scroll -33px -792px teal;
+			text-align:left;
+ 	   		height: auto;
+    		height: 572px;
+    		padding:56px 10px 0 ;
+			width: 560px;
+			}
+		#ilgridg{
+			background:gray}
+	#right{
+		background:pink;
+	}

@@ -1,7 +1,12 @@
 // remap jQuery to $
 (function($){})(window.jQuery);
-//syncheight
-
+	 $('#accordion-slider').kwicks({
+			 max : 230,
+			 spacing : 1
+		 });
+  $('.nano').slimScroll({
+        height: '500px'
+    });
 
  $.backstretch("http://localhost/caras/wp-content/themes/murtaugh-HTML5-Reset-Wordpress-Theme-8aa6329/images/indexc.jpg");/* trigger when page is ready */
 

@@ -6,20 +6,16 @@
 <!-- here comes the javascript -->
 	<?php wp_footer(); ?>
 
-	<script src="<?php bloginfo('template_directory'); ?>/js/jquery-1.7.2.min.js" type="text/javascript"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/jquery-ui-1.8.5.custom.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.tabs.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.syncheight.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.backstretch.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.kwicks-1.5.1.pack.js"></script>
-<script type="text/javascript">
- $().ready(function() {
-	 $('#accordion-slider').kwicks({
-		 max : 230,
-		 spacing : 1
-	 });
-});
-</script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript">
+
+	</script>
 <!-- jQuery is called via the Wordpress-friendly way via functions.php -->
 <!-- this is where we put our custom functions -->
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
