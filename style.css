@@ -72,6 +72,8 @@ Theme responsive pour le caras
    #fpageslider, #pub{display:none !important}
 }
 body{
+	font-size:11px;
+	font-family: 'Droid Sans',sans-serif;
 background:url(images/indexc.jpg) #000 !important;
 }
 body > #header {
@@ -82,6 +84,15 @@ body > #header {
     .ym-wbox {
 		padding:0 10px;
     }
+
+#bottom{
+	width:auto;
+	position:relative;
+	min-width:1016px;
+	width:auto;
+	max-width:1169px;
+	margin:0 auto;
+}
 #logowrapper{
 	border-top: #000 10px solid;
 	position:relative;
@@ -148,14 +159,15 @@ body > #header {
 			 background:orange;
 			}
 #the_body{
-	background: red;
 	clear: both;
+	width:auto;
+	max-width:1164px;
 	height:auto;
+	margin:0 auto;
 	position:relative}
 	#left{
 		height:auto;
-		position:relative;
-		background:green}
+		position:relative;}
 
 		#ilgridl{
 			background: url("images/sprite.png") repeat scroll -33px -792px teal;
@@ -171,6 +183,11 @@ body > #header {
 				padding:0 0 4px 0;
 
 			}
+			.nano2{
+				border-top:#fbd905 1px solid;
+				position:relative;
+				overflow:hidden;
+			}
 			#projects{
 				 background: none repeat scroll 0 0 red;
 			    border-top: 1px solid #FFD400;
@@ -182,8 +199,34 @@ body > #header {
 	#ilgridg{
 			width:auto;
 			padding:10px;
-			background:gray}
+			width:225px;
+			text-align: left;
+			position:relative;
+			color:#a1a1a1;
+			font-size:11px;}
+		.fiend{
+			font-size:16px;
+			line-height:22px;
+			color:#fbd905;
+			font-weight:bold;
+		}
+		.cqs{
+			text-align:justify;
+			padding:10px 0;
+		}
+	.cqs h3{
+		background: url("images/sprite.png") no-repeat scroll -13px -20px transparent;
+		font-size: 16px;
+		font-weight: bold;
+		height: 37px;
+		padding: 6px 7px 0;
+		width: 247px;
+		color:#000;
+	}
+#last-item{
+					border-top:#fbd905 1px solid;
 
+}
 	#right{
 		background:pink;
 	}

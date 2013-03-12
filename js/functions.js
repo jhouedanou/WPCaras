@@ -7,7 +7,9 @@
   $('.nano').slimScroll({
         height: '370px'
     });
-
+ $('.nano2').slimScroll({
+        height: '370px'
+    });
  $.backstretch("http://localhost/caras/wp-content/themes/murtaugh-HTML5-Reset-Wordpress-Theme-8aa6329/images/indexc.jpg");/* trigger when page is ready */
 
 var ww = document.body.clientWidth;
@@ -59,7 +61,18 @@ var adjustMenu = function() {
 	}
 }
 
-
+ WebFontConfig = {
+    google: { families: [ 'Droid+Sans::latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })();
 /* optional triggers
 
 $(window).load(function() {
