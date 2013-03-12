@@ -114,14 +114,31 @@ body > #header {
 				background:url("images/sprite.png") repeat scroll -8px -241px transparent;
 				position:relative}
 				#nbw{
-
+background: none repeat scroll 0 0 transparent;
+height: 58px;
+    position: relative;
+    text-align: left;
+    width: 397px;
 					}
 					#nbw ul{
-
+						float:left;
+						list-style-type: none;
+						position:relative;
+padding:20px 0 0 0 ;
 					}
 					#nbw ul li{
-
+position:relative;
+float:left;
+padding:0 1px 0;
 					}
+					#nbw ul li a{
+						color:#FFF;
+						font-weight:bold;
+						text-decoration:none;
+					}
+#nbw ul li a:hover{
+	color:#FFD400;
+}
 
 #bodywrapper,#bodybox{
 	position:relative;
@@ -230,3 +247,8 @@ body > #header {
 	#right{
 		background:pink;
 	}
+
+#footerz{
+	clear:both;
+	width:100%;
+	position:relative}

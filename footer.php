@@ -1,6 +1,6 @@
 <div id="footerz">
 	<div id="fbboxf">
-		<p>Copyright 2013 | <span>Réseau Radios Cohésion sociale et Citoyenneté</span></p>
+		<p>CARAS</p>
 	</div>
 </div>
 <!-- here comes the javascript -->

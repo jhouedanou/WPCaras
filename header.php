@@ -79,7 +79,7 @@
                 	</a>
                 </div><!--logo-->
                 <div id="nbwrapper" class="ym-g70 ym-gr">
-                		<div id="nbw" class="ym-g70 ym-gr">
+                		<div id="nbw" class="ym-g70 ym-gl">
                 			<ul>
                 				<li><a href="#">Tre</a></li>
                 				<li><a href="#">Tre</a></li>
