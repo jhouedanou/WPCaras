@@ -2,5 +2,4 @@
 
 ## Summary:
 
-tpl
-
+Template pour le site web du CARAS. Basé sur hmtl5 reset
