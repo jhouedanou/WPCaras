@@ -5,12 +5,24 @@
     	<div id="slider-caras" class="ym-grid linearize-level-1">
     		<div id="acc">
     			<ul id="accordion-slider">
-					<li><p>Slide 1</p><img src="image1.png" width="750" height="300" alt="Image Title"/></li>
-					<li><img src="image2.png" width="750" height="300" alt="Image Title"/></li>
-					<li><img src="image3.png" width="750" height="300" alt="Image Title"/></li>
-					<li><img src="image4.png" width="750" height="300" alt="Image Title"/></li>
-					<li><img src="image4.png" width="750" height="300" alt="Image Title"/></li>
-						<li><img src="image4.png" width="750" height="300" alt="Image Title"/></li>
+              <li id="slide1">
+                <p>Slide 1</p><img src="image1.png" width="750" height="300" alt="Image Title"/>
+              </li>
+              <li id="slide2">
+                <img src="image2.png" width="750" height="300" alt="Image Title"/>
+              </li>
+              <li id="slide3">
+                <img src="image3.png" width="750" height="300" alt="Image Title"/>
+              </li>
+              <li id="slide4">
+                <img src="image4.png" width="750" height="300" alt="Image Title"/>
+              </li>
+              <li id="slide5">
+                <img src="image4.png" width="750" height="300" alt="Image Title"/>
+              </li>
+              <li id="slide6">
+                <img src="image4.png" width="750" height="300" alt="Image Title"/>
+              </li>
 				</ul>
     		</div>
     	</div>
@@ -28,7 +40,10 @@
                         </div>
         			</div><!--fin blogs -->
         			<div id="ilgridg" class="ym-g30 ym-gr">
-						<h3 class="fiend">Ce que nous faisons</h3>
+						<div class="fiend">
+              <h3>Ce que nous faisons</h3>
+              <div id="decofinder"></div>
+            </div>
 	       				<div class="nano2"><!--prez-->
 		       				<div class="cqs">
 		       					<h3>Arts</h3>
@@ -65,16 +80,13 @@
             </div><!--left-ym-g66-->
             <!--sidebar-->
             <div id="right" class="ym-g30 ym-gl">
-
             	<div id="insideright" class="ym-gbox">
 					<!--tabs-->
-
 					<!--partenaires eris-->
 					<!--archives-->
             		<?php get_sidebar(); ?>
-
             	</div><!--ym-wbox-->
-   			</div><!--/right-->
+   		   	</div><!--/right-->
             <div class="clear"></div>
 	    </div><!--the_body-->
 	</div><!--bodybox-->

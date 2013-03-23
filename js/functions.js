@@ -1,19 +1,19 @@
 // remap jQuery to $
 (function($){})(window.jQuery);
 	 $('#accordion-slider').kwicks({
-			 max : 230,
-			 spacing : 1
-		 });
+                  size:170,
+                  maxSize:750,
+                  spacing:1,
+                  behavior:'menu'
+              });
   $('.nano').slimScroll({
-        height: '370px'
+        height: '311px'
     });
  $('.nano2').slimScroll({
-        height: '370px'
+        height: '311px'
     });
  $.backstretch("http://localhost/caras/wp-content/themes/murtaugh-HTML5-Reset-Wordpress-Theme-8aa6329/images/indexc.jpg");/* trigger when page is ready */
-
 var ww = document.body.clientWidth;
-
 $(document).ready(function() {
 	$(".nav li a").each(function() {
 		if ($(this).next().length > 0) {

@@ -1,18 +1,40 @@
 /*
-Theme Name: Main Eris TPL
-Theme URI: http://html5reset.org
-Description:Template article.
+Theme Name: Caras Template
+Theme URI: http://houedanou.com
+Description:Template caras.
 Author: Jean Luc Houédanou
 Author URI: http://houedanou.com
 Version: 1
 */
 
-/*
-Theme responsive pour le caras
-*/
-
 /* reset-------------------------------------------------------------- */
-
+.kwicks {
+display: block;
+list-style-type: none;
+list-style: none;
+position: relative;
+margin: 0;
+padding: 0;
+}
+.kwicks > * {
+display: block;
+overflow: hidden;
+padding: 0;
+margin: 0;
+}
+.kwicks.kwicks-processed > * {
+margin: 0;
+position: absolute;
+}
+.kwicks-horizontal > * {
+float: left;
+}
+.kwicks-horizontal > :first-child {
+margin-left: 0;
+}
+.kwicks-vertical > :first-child {
+margin-top: 0;
+}
 /* Design by Jean Luc Houedanou */
 
 /*queries pour la zone de pub*/
@@ -86,11 +108,11 @@ body > #header {
     }
 
 #bottom{
-	width:auto;
+  height:auto;
+  overflow:hidden;
+  width:100%;
+	max-width:1016px;
 	position:relative;
-	min-width:1016px;
-	width:auto;
-	max-width:1169px;
 	margin:0 auto;
 }
 #logowrapper{
@@ -121,25 +143,36 @@ height: 58px;
     width: 397px;
 					}
 					#nbw ul{
+            margin:0;
 						float:left;
 						list-style-type: none;
 						position:relative;
-padding:20px 0 0 0 ;
+padding:23px 0 0 3px;
 					}
 					#nbw ul li{
-position:relative;
-float:left;
-padding:0 1px 0;
+border-right: 1px solid #3b3105;
+float: left;
+margin: 0;
+padding: 0 5px;
+position: relative;
 					}
 					#nbw ul li a{
-						color:#FFF;
-						font-weight:bold;
-						text-decoration:none;
+			 color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 900;
+    text-decoration: none;
 					}
 #nbw ul li a:hover{
 	color:#FFD400;
 }
-
+#serch{
+  height: 32px;
+  font-size:11px;
+  color:#5a4a08;
+  padding: 22px 33px 0 0;
+  text-align: left;
+  width: 115px;
+}
 #bodywrapper,#bodybox{
 	position:relative;
 	clear:both;
@@ -151,43 +184,64 @@ padding:0 1px 0;
 		text-align: center;
 		height: 417px;
 		margin: 0 auto;
-		width: 1200px;
+		width: 1016px;
 	}
 		#acc{
 			 height: 400px;
     margin: 0 auto;
-    width: 1137px;
-
+    width: 1016px;
+    background:red;
 		}
-			ul#accordion-slider{
-			 margin: 0;
-			 padding: 0;
-			 list-style: none;
-			 width:1137px !important;
-			 position: relative;
-			}
-			ul#accordion-slider li{
-			 display: block;
-			 overflow: hidden;
-			 padding: 0;
-			 float: left;
-			 width: 130px;
-			 height: 400px;
-			 background:orange;
-			}
+    #accordion-slider{
+      list-style-type: none;
+      margin: 0;
+          width: 1016px;
+       height: 400px;
+
+    }
+    #accordion-slider li{
+          margin:0;
+      padding:0;
+       height: 400px;
+
+    }
+#slide6{
+  background:#a88a0f;
+}
+#slide5{
+  background:#b89711;
+}
+#slide4{
+  background:#c7a412;
+}
+#slide3{
+  background:#d7b113;
+}
+#slide2{
+  background:#e6be15;
+}
+#slide1{
+  background:#ebc421;
+}
+
 #the_body{
 	clear: both;
 	width:auto;
-	max-width:1164px;
+	max-width:1016px;
 	height:auto;
 	margin:0 auto;
 	position:relative}
 	#left{
 		height:auto;
 		position:relative;}
+#insiderleft{
+  overflow:hidden;
+  position: relative;
+  height: auto;
 
+}
 		#ilgridl{
-			background: url("images/sprite.png") repeat scroll -33px -792px teal;
+			background: url("images/sprite.png") repeat scroll -33px -792px;
 			text-align:left;
  	   		height: auto;
     		height: 572px;
@@ -201,7 +255,6 @@ padding:0 1px 0;
 
 			}
 			.nano2{
-				border-top:#fbd905 1px solid;
 				position:relative;
 				overflow:hidden;
 			}
@@ -215,40 +268,64 @@ padding:0 1px 0;
 
 	#ilgridg{
 			width:auto;
-			padding:10px;
+      text-shadow:#311b12 1px 1px 0px;
+			padding:34px 10px 10px 10px;
 			width:225px;
 			text-align: left;
 			position:relative;
-			color:#a1a1a1;
+			color:#FFFFFF;
 			font-size:11px;}
 		.fiend{
+      height:37px;
 			font-size:16px;
 			line-height:22px;
 			color:#fbd905;
 			font-weight:bold;
 		}
+    .fiend h3{
+      font-weight: bold;
+     letter-spacing: -1px;
+      padding: 0 0 10px;
+    }
+    h3{
+      letter-spacing: -1px;
+    }
+    #decofinder{
+      background: url("images/sprite.png") no-repeat scroll -13px -48px transparent;
+      height: 14px;
+    }
 		.cqs{
 			text-align:justify;
 			padding:10px 0;
-		}
-	.cqs h3{
-		background: url("images/sprite.png") no-repeat scroll -13px -20px transparent;
-		font-size: 16px;
-		font-weight: bold;
-		height: 37px;
-		padding: 6px 7px 0;
-		width: 247px;
-		color:#000;
+		  }
+  .cqs h3{
+      text-shadow:#B89711 1px 1px 0px;
+  		background: url("images/sprite.png") no-repeat scroll -13px -20px transparent;
+  		font-size: 16px;
+  		font-weight: bold;
+  		height: 37px;
+  		padding: 6px 7px 0;
+  		width: 247px;
+  		color:#000;
 	}
 #last-item{
 					border-top:#fbd905 1px solid;
 
 }
 	#right{
-		background:pink;
-	}
+    padding:20px 0 0 0 ;
+  }
+    #insideright{
+      padding:0px;
+      font-size:11px;
+      max-width:190px;
+      background:url(images/tp.png);
+      border-radius:5px;
+      -moz-border-radius:5px;
+      -webkit-border-radius:5px
+    }
 
-#footerz{
+  #footerz{
 	clear:both;
 	width:100%;
 	position:relative}

@@ -11,7 +11,7 @@
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.tabs.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.syncheight.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.backstretch.min.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.kwicks-1.5.1.pack.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.kwicks.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.slimscroll.min.js"></script>
 	<script type="text/javascript">
 
