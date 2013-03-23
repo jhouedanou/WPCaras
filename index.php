@@ -33,6 +33,25 @@
         				<!--integrer nanon scrool-->
                         <div id="blog" class="nano">
 
+<?php $my_query = new WP_Query('cat=1&showposts=10');
+                while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                  <li>
+                    <div class="image-eris-ft">
+                                        <a href="#">
+                                          <?php the_post_thumbnail('medium',array('class' => 'flexible','alt' =>'Cohesion sociale en Côte d Ivoire' ));?>
+                                        </a>
+                                    </div><!--image-->
+                                    <div class="details-eris">
+                                        <h5><a href="<?php the_permalink() ?>"><?php the_title();?></a></h5>
+                                <?php the_excerpt(); ?>
+                                        <span class="date"><div class="date">
+                                    <?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?><br/>
+                                    </div>
+                                    </span>
+                                    </div><!--details-->
+                      </li>
+                <?php endwhile; ?>
+
                         </div><!--blog-->
 
                         <div id="projects">
@@ -73,7 +92,7 @@
 
         				<div class="cqs" id="last-item">
 		       				<h3>Retrouvez nous sur</h3>
-		       				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi scelerisque vulputate augue id venenatis. Donec non sem ac felis sagittis commodo commodo aliquam purus. Aliquam luctus risus at tortor dictum tristique non nec mauris. Praesent in commodo urna. Aliquam consectetur risus eu arcu ultricies adipiscing. Suspendisse potenti. Duis quis est ut nulla semper semper. Nam consequat lectus nec urna mollis eu vestibulum orci varius.</p>
+
 	        			</div>
         			</div>
         		</div>
@@ -81,13 +100,8 @@
             <!--sidebar-->
             <div id="right" class="ym-g30 ym-gl">
             	<div id="insideright" class="ym-gbox">
-					<!--tabs-->
-					<!--partenaires eris-->
-					<!--archives-->
             		<?php get_sidebar(); ?>
-            	</div><!--ym-wbox-->
-   		   	</div><!--/right-->
-            <div class="clear"></div>
+   		   	 </div><!--/right-->
 	    </div><!--the_body-->
 	</div><!--bodybox-->
 </div><!--bodywrapper-->

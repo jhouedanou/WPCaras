@@ -12,6 +12,8 @@
  $('.nano2').slimScroll({
         height: '311px'
     });
+
+
  $.backstretch("http://localhost/caras/wp-content/themes/murtaugh-HTML5-Reset-Wordpress-Theme-8aa6329/images/indexc.jpg");/* trigger when page is ready */
 var ww = document.body.clientWidth;
 $(document).ready(function() {
