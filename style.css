@@ -95,7 +95,7 @@ margin-top: 0;
 }
 body{
 	font-size:11px;
-	font-family: 'Droid Sans',sans-serif;
+	font-family: 'Open Sans',sans-serif;
 background:url(images/indexc.jpg) #000 !important;
 }
 body > #header {
@@ -154,26 +154,29 @@ padding:23px 0 0 3px;
 float: left;
 margin: 0;
 padding: 0 5px;
+border-right:#1b1f1e 1px solid;
 position: relative;
 					}
 					#nbw ul li a{
-            font-family: 'Sacramento',cursive;
-			 color: #FFFFFF;
-    font-size: 19px;
-    font-weight: 900;
-      padding:5px;
-
-    text-decoration: none;
+            font-family: 'Francois One', serif;
+            color: #1b1f1e;
+            font-size: 19px;
+            font-weight: 900;
+             padding:5px;
+            text-decoration: none;
+          -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 					}
 #nbw ul li a:hover{
-  text-shadow:#776300 1px 1px 0px;
-background: #FFD400;
-  color:#FFF;
-  border-radius:10px;
-  -moz-border-radius:10px;
-  color:#000;
-  -webkit-border-radius:10px;
-}
+  color: #FFD400;
+ -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;}
 #serch{
   height: 32px;
   font-size:11px;
@@ -247,35 +250,78 @@ overflow:hidden;
 #insiderleft{
   overflow:hidden;
   position: relative;
-  height: auto;
-
-}
-		#ilgridl{
+  height: auto;}
+  #ilgridl{
 			background: url("images/sprite.png") repeat scroll -33px -792px;
+      position:relative;
 			text-align:left;
- 	   		height: auto;
     		height: 572px;
     		padding:56px 10px 0 ;
 			width: 560px;
 			}
+#overlay-deco{
+     background: url("images/BG.png") repeat-x scroll 0 0 transparent;
+      height: 120px;
+      position: absolute;
+      top: 247px;
+      width: 560px;
+      z-index: 100;
+    }
+    #overlay-deco:hover{
+    }
+a.reiz,.comments-link{
+  position:relative;
+  color:#A88A0F;
+  text-decoration: none;
+  text-shadow:#FFF 1px 1px 0px;}
+  a.reiz:hover{
+    color:#000;
+  }
+ footer.meta{
+  font-size:9px;
+  padding:4px;
+  background:#EEE;
+}
 			#blog{
 				height:370px;
 				width:560px !important;
 				padding:0 0 4px 0;
-
+        position:relative;
 			}
 			.nano2{
 				position:relative;
 				overflow:hidden;
 			}
-			#projects{
-				 background: none repeat scroll 0 0 red;
-			    border-top: 1px solid #FFD400;
-			    height: 126px;
-			    padding: 10px 0;
-			    width: 557px;
-			}
+.zetitle{
+  position:relative}
+.zetitle a{
+    background: url("images/tp.png") repeat scroll 0 0 transparent;
+    color: #000000;
+    font-family: 'Francois One',serif;
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 35px;
+    padding: 3px;
+    position: absolute;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #FFFFFF;
+    top: 97px;
+    width: 202px;
+    z-index: 98;}
 
+      #projects{
+          background: url("images/indexc.jpg") repeat scroll 0 -368px transparent;
+          border-top: 1px solid #FFD400;
+          box-shadow: 0 0 20px #000000 inset;
+          height: 181px;
+          padding: 10px;
+          width: 536px}
+          .projet{
+            font-size:11px;
+            line-height:15px;
+            padding:5px;
+            background:url("images/tp.png") repeat scroll 0 0 transparent;
+          }
 	#ilgridg{
 			background: url("images/tp.png") repeat scroll 0 0 transparent;
     color: #FFFFFF;
@@ -286,10 +332,30 @@ overflow:hidden;
     text-align: left;
     text-shadow: 1px 1px 0 #311B12;
     width: 217px;
+    height:653px;
      border-radius:5px;
       -moz-border-radius:5px;
       -webkit-border-radius:5px
 }
+div.iblogz {
+    text-shadow: 1px 1px 0 #FFFFFF;
+    border-bottom: 2px ridge #FFFFFF;
+    height: auto;
+    margin: 8px;
+    overflow: hidden;
+    padding: 0 10px 0 0;
+    position: relative;
+}
+div.iblogz div.image-caras-ft{
+    float:left;
+    position:relative;
+    margin-right:10px;}
+    .details-caras{
+      font-size:13px;
+      line-height:22px;
+      text-align:justify;
+
+    }
 		.fiend{
       min-height:37px;
 			font-size:16px;
@@ -301,6 +367,7 @@ overflow:hidden;
       font-weight: bold;
      letter-spacing: -1px;
       padding: 0 0 10px;
+      font-family: 'Francois One',serif
     }
     h3{
       letter-spacing: -1px;
@@ -314,15 +381,22 @@ overflow:hidden;
 			padding:10px 0;
 		  }
   .cqs h3{
-      text-shadow:#B89711 1px 1px 0px;
+          font-family: 'Francois One',serif;
+      text-shadow: 2px 3px 0 #B9A003;
   		background: url("images/sprite.png") no-repeat scroll -13px -20px transparent;
   		font-size: 16px;
   		font-weight: bold;
   		height: 37px;
-  		padding: 6px 7px 0;
+  		padding:1px 7px 0;
   		width: 247px;
   		color:#000;
 	}
+div.image-caras-ft a img.flexible{
+  padding: 3px;
+  background:#FFF;
+  border:#999 1px solid;
+  max-width:200px;
+height:auto;}
 #last-item{
 					border-top:#fbd905 1px solid;
 
@@ -379,4 +453,7 @@ padding: 0 0 3px;
 	position:relative}
 .widget input{
   margin:5px 0;
+}
+.sliderz{
+  background:#FFF;
 }

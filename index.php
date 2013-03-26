@@ -5,24 +5,25 @@
     	<div id="slider-caras" class="ym-grid linearize-level-1">
     		<div id="acc">
     			<ul id="accordion-slider">
-              <li id="slide1">
-                <p>Slide 1</p><img src="image1.png" width="750" height="300" alt="Image Title"/>
-              </li>
-              <li id="slide2">
-                <img src="image2.png" width="750" height="300" alt="Image Title"/>
-              </li>
-              <li id="slide3">
-                <img src="image3.png" width="750" height="300" alt="Image Title"/>
-              </li>
-              <li id="slide4">
-                <img src="image4.png" width="750" height="300" alt="Image Title"/>
-              </li>
-              <li id="slide5">
-                <img src="image4.png" width="750" height="300" alt="Image Title"/>
-              </li>
-              <li id="slide6">
-                <img src="image4.png" width="750" height="300" alt="Image Title"/>
-              </li>
+            <?php $accordion = new WP_Query('cat=1&showposts=6');
+                while ($accordion->have_posts()) : $accordion->the_post(); ?>
+                        <li class="sliderz">
+                            <h3 class="zetitle"><a href="<?php the_permalink() ?>"><?php the_title();?></a></h3>
+                          <div class="image-caras-ft">
+                            <a href="#">
+                              <?php the_post_thumbnail('full',array('class' => 'flexible','alt' =>'Centre de Recherche et des Arts du Spectacle' ));?>
+                            </a>
+                          </div><!--image-->
+                          <div class="details-caras">
+
+                                <?php the_excerpt(); ?>
+                                        <span class="date"><div class="date">
+                                    <?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?><br/>
+                                    </div>
+                                    </span>
+                                    </div><!--details-->
+                      </li><!--izz-->
+                <?php endwhile; ?>
 				</ul>
     		</div>
     	</div>
@@ -30,30 +31,34 @@
         	<div id="left" class="ym-g70 ym-gl">
         		<div id="insiderleft">
         			<div id="ilgridl" class="ym-g70 ym-gl">
-        				<!--integrer nanon scrool-->
+        				<!--overlay deco-->
+                <div id="overlay-deco">
+                </div>
+                <!--integrer nanon scrool-->
                         <div id="blog" class="nano">
                 <?php $my_query = new WP_Query('cat=1&showposts=10');
                 while ($my_query->have_posts()) : $my_query->the_post(); ?>
-                  <li>
-                    <div class="image-eris-ft">
-                                        <a href="#">
-                                          <?php the_post_thumbnail('medium',array('class' => 'flexible','alt' =>'Cohesion sociale en Côte d Ivoire' ));?>
-                                        </a>
-                                    </div><!--image-->
-                                    <div class="details-eris">
-                                        <h5><a href="<?php the_permalink() ?>"><?php the_title();?></a></h5>
+                        <div class="iblogz">
+                            <h3 class="zetitle"><a href="<?php the_permalink() ?>"><?php the_title();?></a></h3>
+                          <div class="image-caras-ft">
+                            <a href="#">
+                              <?php the_post_thumbnail('medium',array('class' => 'flexible','alt' =>'Centre de Recherche et des Arts du Spectacle' ));?>
+                            </a>
+                          </div><!--image-->
+                          <div class="details-caras">
+
                                 <?php the_excerpt(); ?>
                                         <span class="date"><div class="date">
                                     <?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?><br/>
                                     </div>
                                     </span>
                                     </div><!--details-->
-                      </li>
+                      </div><!--iblogz-->
                 <?php endwhile; ?>
                         </div><!--blog-->
                         <div id="projects">
                         	<div class="projet">
-
+dz
                           </div>
                         </div>
         			</div><!--fin blogs -->

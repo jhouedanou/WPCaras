@@ -5,7 +5,6 @@
 </div>
 <!-- here comes the javascript -->
 	<?php wp_footer(); ?>
-
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.tabs.js"></script>
@@ -13,11 +12,13 @@
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.backstretch.min.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.kwicks.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript">
+	<script type="text/javascript"></script>
 
-	</script>
-<!-- jQuery is called via the Wordpress-friendly way via functions.php -->
-<!-- this is where we put our custom functions -->
+  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.backgroundpos.min.js"></script>
+<script type="text/javascript">
+//jQuery is called via the Wordpress-friendly way via functions.php -->
+//this is where we put our custom functions -->
+</script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
 <!-- Asynchronous google analytics; this is the official snippet.
 	 Replace UA-XXXXXX-XX with your site's ID and uncomment to enable.
