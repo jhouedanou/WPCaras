@@ -3,10 +3,12 @@
 
 $('#ilgridg, #right').syncHeight({ updateOnResize: true });
  $('#accordion-slider').kwicks({
-                  size:170,
-                  maxSize:750,
+                  size:169,
+                  maxSize:500,
                   spacing:1,
-                  behavior:'menu'
+                  behavior:'menu',
+                  duration: 120,
+                    easing: 'easeOutBounce'
               });
   $('.nano').slimScroll({
         height: '311px'
@@ -14,14 +16,20 @@ $('#ilgridg, #right').syncHeight({ updateOnResize: true });
  $('.nano2').slimScroll({
         height: '311px'
     });
- jQuery('#overlay-deco')
+ $('#overlay-deco')
            .hover(function(){
              jQuery(this).animate({backgroundPosition: '0px 82px'});
               },function(){
             jQuery(this).animate({backgroundPosition: '0px 0px'});
             });
-
- $.backstretch("http://localhost/caras/wp-content/themes/murtaugh-HTML5-Reset-Wordpress-Theme-8aa6329/images/indexc.jpg");/* trigger when page is ready */
+  $(".te").hover(
+      function() {
+         $(this).children('.details-caras-slide').fadeIn('slow');
+      },function(){
+         $(this).children('.details-caras-slide').fadeOut('fast');
+      }
+  );
+$.backstretch("http://localhost/caras/wp-content/themes/murtaugh-HTML5-Reset-Wordpress-Theme-8aa6329/images/indexc.jpg");/* trigger when page is ready */
 var ww = document.body.clientWidth;
 $(document).ready(function() {
 	$(".nav li a").each(function() {

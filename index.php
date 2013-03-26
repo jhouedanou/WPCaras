@@ -5,24 +5,21 @@
     	<div id="slider-caras" class="ym-grid linearize-level-1">
     		<div id="acc">
     			<ul id="accordion-slider">
-            <?php $accordion = new WP_Query('cat=1&showposts=6');
-                while ($accordion->have_posts()) : $accordion->the_post(); ?>
-                        <li class="sliderz">
-                            <h3 class="zetitle"><a href="<?php the_permalink() ?>"><?php the_title();?></a></h3>
-                          <div class="image-caras-ft">
-                            <a href="#">
-                              <?php the_post_thumbnail('full',array('class' => 'flexible','alt' =>'Centre de Recherche et des Arts du Spectacle' ));?>
-                            </a>
-                          </div><!--image-->
-                          <div class="details-caras">
+            <?php $accordion = new WP_Query('cat=5&showposts=6');
+                $i = 0;
+                 while ($accordion->have_posts()) : $accordion->the_post();
+                  $i++; ?>
+                        <li id="<?php echo 'slider'.$i;?>" class="te">
+
+                            <h3 class="zetitleslide"><a href="<?php the_permalink() ?>"><?php the_title();?></a></h3>
+
+                          <div class="details-caras-slide">
 
                                 <?php the_excerpt(); ?>
-                                        <span class="date"><div class="date">
-                                    <?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?><br/>
-                                    </div>
-                                    </span>
+
                                     </div><!--details-->
                       </li><!--izz-->
+                      <?php $s++;?>
                 <?php endwhile; ?>
 				</ul>
     		</div>
@@ -96,7 +93,7 @@ dz
 
         				<div class="cqs" id="last-item">
 		       				<h3>Retrouvez nous sur</h3>
-
+                    <?php dynamic_sidebar('webdeux'); ?>
 	        			</div>
         			</div>
         		</div>

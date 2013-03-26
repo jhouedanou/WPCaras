@@ -4,7 +4,16 @@ show_admin_bar( false );
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 120, 100,true );
 add_theme_support( 'menus' );
-
+//widget area reseaux sociaux
+register_sidebar(array(
+    'id' => 'webdeux',
+    'name' => 'web 2.0',
+    'description' => 'zone de widgets 1',
+    'before_widget' => '<div id="%1$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h4>',
+    'after_title' => '</h4>'
+));
 
 function new_excerpt_more($more) {
        global $post;
