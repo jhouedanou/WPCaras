@@ -1,18 +1,25 @@
 <?php
 show_admin_bar( false );
 //subset de donnes pour la page d'accueil
-add_theme_support( 'post-thumbnails' ); 
+add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 120, 100,true );
 add_theme_support( 'menus' );
-register_sidebars( 1,
-	array(
-		'name' => 'widgetized-page-top',
-		'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget' => '</div>',
-        'before_title' => '<h2 class="widgettitle">',
-        'after_title' => '</h2>'
-	)
-);
+
+
+if (function_exists('register_sidebar')) {
+
+  register_sidebar(array(
+    'name' => 'projects-area',
+    'id'   => 'projects-area',
+    'description'   => 'Section des projets du Caras.',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ));
+
+}
+
 function new_excerpt_more($more) {
        global $post;
 	return ' <a class="reiz" href="'. get_permalink($post->ID) . '">En savoir plus &rarr;</a>';
@@ -60,15 +67,15 @@ class MV_Cleaner_Walker_Nav_Menu extends Walker {
 
          // Translations can be filed in the /languages/ directory
         load_theme_textdomain( 'html5reset', TEMPLATEPATH . '/languages' );
- 
+
         $locale = get_locale();
         $locale_file = TEMPLATEPATH . "/languages/$locale.php";
         if ( is_readable($locale_file) )
             require_once($locale_file);
-	
+
 	// Add RSS links to <head> section
 	automatic_feed_links();
-	
+
 	// Load jQuery
 	if ( !function_exists(core_mods) ) {
 		function core_mods() {
@@ -88,7 +95,7 @@ class MV_Cleaner_Walker_Nav_Menu extends Walker {
     }
     add_action('init', 'removeHeadLinks');
     remove_action('wp_head', 'wp_generator');
-    
+
     if (function_exists('register_sidebar')) {
     	register_sidebar(array(
     		'name' => __('Sidebar Widgets','html5reset' ),
@@ -100,7 +107,7 @@ class MV_Cleaner_Walker_Nav_Menu extends Walker {
     		'after_title'   => '</h2>'
     	));
     }
-    
+
     add_theme_support( 'post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'audio', 'chat', 'video')); // Add 3.1 post format theme support.
 
 ?>

@@ -32,8 +32,7 @@
         			<div id="ilgridl" class="ym-g70 ym-gl">
         				<!--integrer nanon scrool-->
                         <div id="blog" class="nano">
-
-<?php $my_query = new WP_Query('cat=1&showposts=10');
+                <?php $my_query = new WP_Query('cat=1&showposts=10');
                 while ($my_query->have_posts()) : $my_query->the_post(); ?>
                   <li>
                     <div class="image-eris-ft">
@@ -51,11 +50,11 @@
                                     </div><!--details-->
                       </li>
                 <?php endwhile; ?>
-
                         </div><!--blog-->
-
                         <div id="projects">
-                        	<div class="projet"></div>
+                        	<div class="projet">
+                            <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('widgetized-area')) : else : ?>
+                          </div>
                         </div>
         			</div><!--fin blogs -->
         			<div id="ilgridg" class="ym-g30 ym-gr">
