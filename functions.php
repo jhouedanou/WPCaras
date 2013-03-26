@@ -6,20 +6,6 @@ set_post_thumbnail_size( 120, 100,true );
 add_theme_support( 'menus' );
 
 
-if (function_exists('register_sidebar')) {
-
-  register_sidebar(array(
-    'name' => 'projects-area',
-    'id'   => 'projects-area',
-    'description'   => 'Section des projets du Caras.',
-    'before_widget' => '<div id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</div>',
-    'before_title'  => '<h4>',
-    'after_title'   => '</h4>'
-  ));
-
-}
-
 function new_excerpt_more($more) {
        global $post;
 	return ' <a class="reiz" href="'. get_permalink($post->ID) . '">En savoir plus &rarr;</a>';

@@ -53,7 +53,7 @@
                         </div><!--blog-->
                         <div id="projects">
                         	<div class="projet">
-                            <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('widgetized-area')) : else : ?>
+
                           </div>
                         </div>
         			</div><!--fin blogs -->

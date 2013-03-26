@@ -157,10 +157,12 @@ padding: 0 5px;
 position: relative;
 					}
 					#nbw ul li a{
-            font-family: Sacramento,cursive;
+            font-family: 'Sacramento',cursive;
 			 color: #FFFFFF;
     font-size: 19px;
     font-weight: 900;
+      padding:5px;
+
     text-decoration: none;
 					}
 #nbw ul li a:hover{
@@ -169,7 +171,6 @@ background: #FFD400;
   color:#FFF;
   border-radius:10px;
   -moz-border-radius:10px;
-  padding:5px;
   color:#000;
   -webkit-border-radius:10px;
 }
