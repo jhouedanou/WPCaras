@@ -53,8 +53,19 @@
                         </div><!--blog-->
                         <div id="projects">
                         	<div class="projet">
-dz
-                          </div>
+<?php
+                    $projet = new WP_Query('cat=10&showposts=10');
+                    while ($projet->have_posts()) : $projet->the_post();?>
+                      <div class="cqs">
+                            <h3><a href="<?php the_permalink() ?>"><?php the_title();?></a></h3>
+                            <p>
+                                <?php the_excerpt(); ?>
+                            </p><!--details-->
+                      </div><!--cqs-->
+                      <?php ;?>
+                    <?php endwhile; ?>
+
+                  </div>
                         </div>
         			</div><!--fin blogs -->
         			<div id="ilgridg" class="ym-g30 ym-gr">
@@ -78,8 +89,11 @@ dz
         				</div><!--nano-->
 
         				<div class="cqs" id="last-item">
-		       				<h3>Retrouvez nous sur</h3>
 
+                  <h3>Retrouvez nous sur</h3>
+                  <!--rese-->
+               <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("zone-reseaux-sociaux") ) : ?>
+<?php endif; ?>
 	        			</div>
         			</div>
         		</div>

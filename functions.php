@@ -4,6 +4,7 @@ show_admin_bar( false );
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 120, 100,true );
 add_theme_support( 'menus' );
+
 register_sidebars( 1,
   array(
     'name' => 'zone-de-recherche',
@@ -13,6 +14,17 @@ register_sidebars( 1,
         'after_title' => '</h2>'
   )
 );
+
+register_sidebars( 1,
+  array(
+    'name' => 'zone-reseaux-sociaux',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widgettitle">',
+        'after_title' => '</h2>'
+  )
+);
+
 
 function new_excerpt_more($more) {
        global $post;

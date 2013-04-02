@@ -1,5 +1,9 @@
 // remap jQuery to $
 (function($){})(window.jQuery);
+$('.projet').cycle({
+  fx: 'scrollHorz',
+    speed: 'fast',
+});
  $('#accordion-slider').kwicks({
                   size:169,
                   maxSize:500,
@@ -9,7 +13,7 @@
                     easing: 'easeOutBounce'
               });
 
-$("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").colorbox({transition:"none", maxWidth:"80%", maxHeight:"80%"});
+$("a[href$='.jpg'],a[href$='.png'],a[href$='.gif']").colorbox({transition:"fade", width:"80%", height:"80%"});
 
 $.jGrowl.defaults.position = 'bottom-left';
 
@@ -72,22 +76,31 @@ var adjustMenu = function() {
         height: '311px'
     });
  $('.nano2').slimScroll({
-        height: '311px'
+        height: '378px'
     });
-  $('.entry-content').slimScroll({
+  $('#content .entry-content').slimScroll({
         height: '503px'
     });
+  $('#caraseer').slimScroll({
+        height: '503px'
+    });
+$('div.entry-content p img').hover(function(){
+             jQuery(this).animate({opacity: '0.5'});
+              $.jGrowl("Cliquez sur l'image pour l'afficher en plein écran", { life: 1000 }, { header: 'Important' });
+              },function(){
+            jQuery(this).animate({opacity: '1'});
+            });
  $('#overlay-deco')
            .hover(function(){
              jQuery(this).animate({backgroundPosition: '0px 82px'});
-              //$.jGrowl("Veuillez utiliser la molette de votre souris pour faire d&eacute;filer le texte ( &darr;  &uarr;) ", { life: 5000 }, { header: 'Important' });
+              $.jGrowl("Veuillez utiliser la molette de votre souris pour faire d&eacute;filer le texte ( &darr;  &uarr;) ", { life: 1000 }, { header: 'Important' });
               },function(){
             jQuery(this).animate({backgroundPosition: '0px 0px'});
             });
  $('#overlay-deco2')
            .hover(function(){
              jQuery(this).animate({backgroundPosition: '0px 82px'});
-               //$.jGrowl("Veuillez utiliser la molette de votre souris pour faire d&eacute;filer le texte ( &darr;  &uarr;) ", { life: 5000 }, { header: 'Important' });
+               $.jGrowl("Veuillez utiliser la molette de votre souris pour faire d&eacute;filer le texte ( &darr;  &uarr;) ", { life: 1000 }, { header: 'Important' });
 
               },function(){
             jQuery(this).animate({backgroundPosition: '0px 0px'});

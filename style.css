@@ -201,8 +201,8 @@ position: relative;
 }
 	#slider-caras{
 		background: url("images/sprite.png") repeat scroll -11px -356px transparent;
-border-bottom: 2px ridge #67301C;
-border-top: 2px ridge #67301C;
+/*border-bottom: 2px ridge #67301C;
+border-top: 2px ridge #67301C;*/
 height: 420px;
 margin: 0 auto;
 padding: 10px 0 0;
@@ -300,10 +300,27 @@ overflow:hidden;
     -moz-border-radius: 0 5px 5px 0;
     font-family: 'Francois One',serif;
     height: 24px;
+    font-size:15px;
     padding: 5px 0 0 6px;
     text-shadow: 2px 3px 0 #B9A003;
     width: 500px;
       }
+div#ilgridlz.ym-g70 div#content div.slimScrollDiv div#caraseer div.cat-content h5 a{
+ background: none repeat scroll 0 0 #FFD700;
+    border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    font-family: 'Francois One',serif;
+    height: 24px;
+    font-size:15px;
+    padding: 5px;
+    text-decoration: none;
+    color:black;
+    text-shadow: 2px 3px 0 #B9A003;
+      }
+div#ilgridlz.ym-g70 div#content div.slimScrollDiv div#caraseer div.cat-content h5{
+  padding:5px 0;
+}
 #overlay-deco{
      background: url("images/BG.png") repeat-x scroll 0 0 transparent;
       height: 120px;
@@ -375,6 +392,8 @@ a.reiz,.comments-link{
     z-index: 98;}
 
       #projects{
+        position: relative;
+        overflow: hidden;
           background: url("images/indexc.jpg") repeat scroll 0 -368px transparent;
           border-top: 1px solid #FFD400;
           box-shadow: 0 0 20px #000000 inset;
@@ -385,8 +404,28 @@ a.reiz,.comments-link{
             font-size:11px;
             line-height:15px;
             padding:5px;
-            background:url("images/tp.png") repeat scroll 0 0 transparent;
+    height: 180px !important;
+
           }
+
+          html.wf-opensans-n4-active body div#bodywrapper.ym-wrapper div#bodybox.ym-wbox div#the_body.ym-grid div#left.ym-g70 div#insiderleft div#ilgridl.ym-g70 div#projects div.projet div.slimScrollDiv div.cqs p{
+            color: #FFFFFF;
+font-size: 12px;
+line-height: 17px;
+text-shadow: 1px 1px 0 #1E0F08;
+          }
+div#left.ym-g70 div#insiderleft div#ilgridl.ym-g70 div#projects div.projet div.cqs {
+  padding:5px;
+      border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin:5px;
+    float:left;
+    height: 180px !important;
+    background:url("images/tp.png") repeat scroll 0 0 transparent;}
+div#left.ym-g70 div#insiderleft div#ilgridl.ym-g70 div#projects div.projet div.cqs h3{padding:3px 7px 0;}
+
+
 	#ilgridg{
 			background: url("images/tp.png") repeat scroll 0 0 transparent;
     color: #FFFFFF;
@@ -474,14 +513,18 @@ div.iblogz div.image-caras-ft{
   transition: all 0.2s ease;
     }
 div.image-caras-ft a img.flexible{
-  padding: 3px;
-  background:#FFF;
-  border:#999 1px solid;
-  max-width:200px;
-height:auto;}
+  background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #999999;
+    height: auto;
+    min-height: 163px;
+    padding: 3px;
+    width: 200px;}
 #last-item{
 					border-top:#fbd905 1px solid;
 
+}
+div.details-caras span.date{
+  clear: both
 }
 	#right{
     padding:20px 0 0 0 ;
@@ -582,8 +625,6 @@ height:auto;}
   height: 31px;
 }
 
-
-
 #insideright .widget{
       padding:5px;
       margin:10px 0;
@@ -616,9 +657,30 @@ margin: 0 0 10px;
 padding: 0 0 3px;
  }
   #footerz{
-	clear:both;
-	width:100%;
-	position:relative}
+    position:absolute;
+    overflow: hidden;
+	 background: rgba(0, 0, 0, 0.6);
+    clear: both;
+    z-index:10000;
+    color: #FFFFFF;
+    font-size: 13px;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;}
+    #fbboxf{
+      width:960px;
+      margin:0 auto;
+    }
+    #oozaru{
+      color:#FFF;
+      font-family: 'Francois One',serif
+    }
+    #credit320{
+      background:url(http://morytraore.com/wp-content/themes/morytraoreBT/images/jl.jpg);
+      height:16px;
+      width: 16px;
+      display: block
+    }
 .widget input{
   margin:5px 0;
 }
@@ -637,7 +699,7 @@ h3.zetitleslide a{
 }
 .details-caras-slide{
    display:none;
-   background: #FFD300;
+   background: rgba(255, 215, 0, 0.4);
    font-family: 'Francois One',serif;
    bottom: 0;
     font-size: 13px;
@@ -646,6 +708,9 @@ h3.zetitleslide a{
     padding:4px;
     text-align:left;
 }
+html.wf-opensans-n4-active body div#bodywrapper.ym-wrapper div#footerz div#fbboxf p a#credit320{
+  padding:5px 0 0 0 ;
+}
 .details-caras-slide .reiz{
   color:#FFD300}
 div#nbwrapper.ym-g70 div#serch.ym-g30 div#search-2.widget form#searchform div label.screen-reader-text{
@@ -653,8 +718,9 @@ div#nbwrapper.ym-g70 div#serch.ym-g30 div#search-2.widget form#searchform div la
 }
 div#nbwrapper.ym-g70 div#serch.ym-g30 div#search-2.widget form#searchform div input#s{
     border: medium none;
+    font-family: 'Francois One',serif;
     float: left;
-    padding: 5px;
+    padding: 3px;
     position: relative;
     width: 91px;}
 div#nbwrapper.ym-g70 div#serch.ym-g30 div#search-2.widget form#searchform div input#searchsubmit{
@@ -844,6 +910,83 @@ background:#bdbbbb;
   border-radius:5px;
   -webkit-border-radius:5px;
   -moz-border-radius:5px;
+     -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#webdeuxs{
+  list-style-type: none;
+  margin:0px;
+  height:75px;
+  padding:5px 0;
+}
+#webdeuxs li{
+  height:42px;
+  width:42px;
+  float: left;
+  position: relative;
+    /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  /* IE 5-7 */
+  filter: alpha(opacity=30);
+  /* Netscape */
+  -moz-opacity: 0.3;
+  /* Safari 1.x */
+  -khtml-opacity: 0.3;
+  /* Good browsers */
+  opacity: 0.3;
+      -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#webdeuxs li:hover{
+      /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  /* IE 5-7 */
+  filter: alpha(opacity=100);
+  /* Netscape */
+  -moz-opacity: 1;
+  /* Safari 1.x */
+  -khtml-opacity: 1;
+  /* Good browsers */
+  opacity: 1;
+      -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer
+}
+#facebosok{
+  background:url(images/fb.png);
+       -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#twister{
+  background:url(images/twt.png);
+     -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#gogole{
+  background:url(images/gp.png);
+     -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+#rss{
+  background:url(images/rss.png);
      -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
@@ -1043,7 +1186,13 @@ font-family:'Open Sans',sans-serif;
 .entry-content a:hover{
   color:#000;
 }
-.post{
+div.slimScrollDiv div#caraseer{
+  width:400px;
+}
+ div#content div.slimScrollDiv div#caraseer div.cat-content{
+border-bottom: 2px ridge #FFFFFF;
+    padding: 5px; }
+div#content div.slimScrollDiv div#caraseer div.cat-content p, .post{
  font-size: 13px;
     line-height: 22px;
     text-align: justify;
@@ -1153,7 +1302,9 @@ font-family:'Open Sans',sans-serif;
   vertical-align: middle;
   content: '"';
 }
+div.entry-content p img{
 
+}
 #footer {
   height: 5.4em;
   padding: 1.5em 0 0 0;
@@ -1204,3 +1355,61 @@ font-family:'Open Sans',sans-serif;
   font-style: italic;
   color: #999;
 }
+/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#000;}
+#colorbox{outline:0;}
+    #cboxTopLeft{width:14px; height:14px; background:url(images/controls.png) no-repeat 0 0;}
+    #cboxTopCenter{height:14px; background:url(images/border.png) repeat-x top left;}
+    #cboxTopRight{width:14px; height:14px; background:url(images/controls.png) no-repeat -36px 0;}
+    #cboxBottomLeft{width:14px; height:43px; background:url(images/controls.png) no-repeat 0 -32px;}
+    #cboxBottomCenter{height:43px; background:url(images/border.png) repeat-x bottom left;}
+    #cboxBottomRight{width:14px; height:43px; background:url(images/controls.png) no-repeat -36px -32px;}
+    #cboxMiddleLeft{width:14px; background:url(images/controls.png) repeat-y -175px 0;}
+    #cboxMiddleRight{width:14px; background:url(images/controls.png) repeat-y -211px 0;}
+    #cboxContent{background:#fff; overflow:visible;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:5px;}
+        #cboxLoadingOverlay{background:url(images/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+        #cboxTitle{position:absolute; bottom:-25px; left:0; text-align:center; width:100%; font-weight:bold; color:#7C7C7C;}
+        #cboxCurrent{position:absolute; bottom:-25px; left:58px; font-weight:bold; color:#7C7C7C;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible;  position:absolute; bottom:-29px; background:url(images/controls.png) no-repeat 0px 0px; width:23px; height:23px; text-indent:-9999px;}
+
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxPrevious{left:0px; background-position: -51px -25px;}
+        #cboxPrevious:hover{background-position:-51px 0px;}
+        #cboxNext{left:27px; background-position:-75px -25px;}
+        #cboxNext:hover{background-position:-75px 0px;}
+        #cboxClose{right:0; background-position:-100px -25px;}
+        #cboxClose:hover{background-position:-100px 0px;}
+
+        .cboxSlideshow_on #cboxSlideshow{background-position:-125px 0px; right:27px;}
+        .cboxSlideshow_on #cboxSlideshow:hover{background-position:-150px 0px;}
+        .cboxSlideshow_off #cboxSlideshow{background-position:-150px -25px; right:27px;}
+        .cboxSlideshow_off #cboxSlideshow:hover{background-position:-125px 0px;}
+

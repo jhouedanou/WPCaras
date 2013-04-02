@@ -58,7 +58,8 @@
 
                 <div class="cqs" id="last-item">
                   <h3>Retrouvez nous sur</h3>
-
+ <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("zone-reseaux-sociaux") ) : ?>
+<?php endif; ?>
                 </div>
               </div>
             </div>
