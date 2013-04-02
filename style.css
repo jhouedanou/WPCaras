@@ -1412,4 +1412,11 @@ font-family:'Open Sans',sans-serif;
         .cboxSlideshow_on #cboxSlideshow:hover{background-position:-150px 0px;}
         .cboxSlideshow_off #cboxSlideshow{background-position:-150px -25px; right:27px;}
         .cboxSlideshow_off #cboxSlideshow:hover{background-position:-125px 0px;}
-
+html.wf-opensans-n4-active body div#bodywrapper.ym-wrapper div#bodybox.ym-wbox div#the_body.ym-grid div#left.ym-g70 div#insiderleft div#ilgridlz.ym-g70 div#content article#post-2.post-2 div.slimScrollDiv div.entry-content div#wpcf7-f25-p2-o1.wpcf7 form.wpcf7-form p input.wpcf7-form-control,html.wf-opensans-n4-active body div#bodywrapper.ym-wrapper div#bodybox.ym-wbox div#the_body.ym-grid div#left.ym-g70 div#insiderleft div#ilgridlz.ym-g70 div#content article#post-2.post-2 div.slimScrollDiv div.entry-content div#wpcf7-f25-p2-o1.wpcf7 form.wpcf7-form p span.wpcf7-form-control-wrap textarea.wpcf7-form-control{
+  background:#000;
+  margin:10px 0;
+  padding:5px;
+  color:#FFF;
+  font-family: 'Francois One',serif;
+  border:none;
+}
