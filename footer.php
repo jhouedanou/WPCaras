@@ -7,15 +7,16 @@
 	<?php wp_footer(); ?>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.easing/1.3/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.tabs.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.syncheight.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.backstretch.min.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.kwicks.js"></script>
-	<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.slimscroll.min.js"></script>
-	<script type="text/javascript"></script>
-
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.backstretch/2.0.3/jquery.backstretch.min.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/kwicks/1.5.1/jquery.kwicks-1.5.1.js"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/slimscroll/0.6.5/slimScroll.min.js"></script>
+ <script type="text/javascript" src="http://cdn.jsdelivr.net/jgrowl/1.2.6/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/colorbox/1.4.4/jquery.colorbox-min.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.backgroundpos.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/jquery.syncheight.js"></script>
+ <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
 <script type="text/javascript">
 //jQuery is called via the Wordpress-friendly way via functions.php -->
 //this is where we put our custom functions -->

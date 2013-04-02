@@ -4,16 +4,15 @@ show_admin_bar( false );
 add_theme_support( 'post-thumbnails' );
 set_post_thumbnail_size( 120, 100,true );
 add_theme_support( 'menus' );
-//widget area reseaux sociaux
-register_sidebar(array(
-    'id' => 'webdeux',
-    'name' => 'web 2.0',
-    'description' => 'zone de widgets 1',
-    'before_widget' => '<div id="%1$s">',
-    'after_widget' => '</div>',
-    'before_title' => '<h4>',
-    'after_title' => '</h4>'
-));
+register_sidebars( 1,
+  array(
+    'name' => 'zone-de-recherche',
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="widgettitle">',
+        'after_title' => '</h2>'
+  )
+);
 
 function new_excerpt_more($more) {
        global $post;
